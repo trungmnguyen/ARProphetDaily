@@ -61,7 +61,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             videoNode.play()
             
-            let videoScene = SKScene(size: CGSize(width: 360, height: 144)) // if using a bigger size set than (480,360), the really scene may be smaller in AR; however, the smaller size is fine.
+            let videoScene = SKScene(size: CGSize(width: 480, height: 360)) // if using a bigger size set than (480,360), the really scene may be smaller in AR; however, the smaller size is fine.
             
             videoNode.position = CGPoint(x: videoScene.size.width/2, y: videoScene.size.height/2)
             videoNode.yScale *= -1.0
